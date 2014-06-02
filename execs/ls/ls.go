@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/jakecoffman/unix/ls"
+	"github.com/jakecoffman/unix"
 )
 
 func main() {
-	out := ls.Ls()
+	out := unix.Ls()
 	for {
 		line, ok := <-out
 		if !ok {

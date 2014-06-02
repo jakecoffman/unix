@@ -6,12 +6,12 @@ import (
 	"log"
 	"os"
 
-	"github.com/jakecoffman/unix/grep"
+	"github.com/jakecoffman/unix"
 )
 
 func main() {
 	in := make(chan string)
-	out := grep.Grep(in, os.Args[1])
+	out := unix.Grep(in, os.Args[1])
 
 	go func() {
 		defer func() { close(in) }()
