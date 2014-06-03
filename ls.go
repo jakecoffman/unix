@@ -1,4 +1,4 @@
-package ls
+package unix
 
 import "io/ioutil"
 

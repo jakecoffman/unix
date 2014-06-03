@@ -1,4 +1,4 @@
-package grep
+package unix
 
 import "strings"
 
