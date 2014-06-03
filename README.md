@@ -18,8 +18,8 @@ installing binaries
 
 There may be a better way to do this, but running these commands:
 
-`go get github.com/jakecoffman/unix/execs/ls`
-`cd %GOPATH%\github.com\jakecoffman\unix\execs\ls`
-`go install`
+```go get github.com/jakecoffman/unix/execs/ls
+cd %GOPATH%\github.com\jakecoffman\unix\execs\ls
+go install```
 
 Will install ls into $GOBIN on Windows.
